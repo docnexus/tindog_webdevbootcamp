@@ -84,7 +84,6 @@ h1 {
 }
 
 #testimonials {
-  padding: 7% 15%;
   background-color: #ef8172;
   color: #fff;
     text-align: center;
@@ -117,4 +116,8 @@ h2{
 .press-logo{
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
 }
