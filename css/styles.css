@@ -1,12 +1,39 @@
-#body {
+/* HTML Elements */
+body {
   font-family: Montserrat;
+  text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+.p {
+  font-weight: lighter;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Headings */
+.big-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* title */
 #title {
   background-color: #ff4c68;
   color: white;
-  font-family: Montserrat-Black;
+  font-family: "Montserrat-Black";
   font-weight: bold;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
 }
 
 .heading {
@@ -14,26 +41,8 @@
   font-weight: normal;
 }
 
-h1 {
-  font-family: "Montserrat-Black";
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.h3 {
-  font-weight: bold;
-}
-
-.p {
-  font-weight: lighter;
-}
-
 .greytext {
   color: #8f8f8f;
-}
-
-.container-fluid {
-  padding: 3% 15% 7%;
 }
 
 .button-padded {
@@ -67,6 +76,18 @@ h1 {
   position: absolute;
 }
 
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* Features */
 #features {
   background-color: white;
   position: relative;
@@ -81,24 +102,14 @@ h1 {
   color: #ff4c68;
 }
 
-.centered {
-  text-align: center;
+.feature-text {
+  font-size: 1.5rem;
 }
 
-.padded {
-  padding: 5% 5% 5% 5%;
-}
-
+/* Testimonials */
 #testimonials {
   background-color: #ef8172;
   color: #fff;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Montserrat-bold";
-  font-size: 3rem;
-  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -112,9 +123,14 @@ h2 {
   width: 50%;
 }
 
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Press */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -123,34 +139,21 @@ h2 {
   margin: 20px 20px 50px;
 }
 
-.carousel-item {
-  padding: 2% 3%;
+/* Pricing */
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
-#pricing {
-  text-align: center;
-}
-
-@media (max-width: 1028px) {
-  #title {
-    text-align: center;
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
-}
-
+/* Call to action */
 #cta {
   background-color: #ff4c68;
   color: white;
   font-family: Montserrat-Black;
   font-weight: bold;
-  text-align: center;
 }
 
+/* Footer */
 #footer {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
 }
